@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Landing page </title>
+    <link rel="stylesheet" href="my work.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="images/logo.png" id="logo">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="#"> Menu </a></li>
+                <li><a href="#"> Contact </a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <h1> NIKE </h1>
+    </div>
+    <div class="shoes">
+        <img src="images/n1.png" class="NIKE" id="n1">
+        <ul>
+            <li>
+                <img src="images/n2.png" id="n2" onclick="imgSlider('images/n2.png')">
+            </li>
+            <li>
+                <img src="images/n3.png" id="n3" onclick="imgSlider('images/n3.png')">
+            </li>
+            <li>
+                <img src="images/n4.png" id="n4" onclick="imgSlider('images/n4.png')">
+            </li>
+            <li>
+                <img src="images/n1.png" id="nike" onclick="imgSlider('images/n1.png')">
+            </li>
+        </ul>
+    </div>
+    <img src="images/bg.jpeg" id="bg">
+    <script type="text/javascript"> 
+        function imgSlider(anything){
+            document.querySelector('.NIKE').src = anything;
+        }
+    </script>
+</body>
+</html>
